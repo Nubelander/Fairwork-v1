@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research Process — FAIRWORK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/process.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-logo"><a href="index.html">FAIR<span>WORK</span></a></div>
+    <ul class="nav-links">
+      <li><a href="about.html">About the Project</a></li>
+      <li><a href="team.html">Meet the Team</a></li>
+      <li><a href="process.html" class="active">Research Process</a></li>
+    </ul>
+    <a class="nav-ask-btn" href="index.html#ask">Ask FAIRWORK</a>
+  </nav>
+
+  <header class="page-hero">
+    <div class="eyebrow">Research Process</div>
+    <h1>Transparent, replicable methods.</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </header>
+
+  <main class="page-wrap">
+    <section id="collection">
+      <div class="section-header">
+        <span class="eyebrow">How research is collected + how papers are coded</span>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="steps">
+        <article class="step-card reveal">
+          <div class="step-num">Step 01</div>
+          <div class="step-title">Collect</div>
+          <div class="step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</div>
+        </article>
+
+        <article class="step-card reveal d1">
+          <div class="step-num">Step 02</div>
+          <div class="step-title">Code</div>
+          <div class="step-desc">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+        </article>
+
+        <article class="step-card reveal d2">
+          <div class="step-num">Step 03</div>
+          <div class="step-title">Structure</div>
+          <div class="step-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+        </article>
+      </div>
+    </section>
+
+    <section id="qc" class="section-spacer">
+      <div class="section-header">
+        <span class="eyebrow">Quality control + transparency</span>
+        <div class="section-rule"></div>
+      </div>
+
+      <div class="qc-grid">
+        <div class="panel reveal">
+          <h3>Quality control</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+          <ul>
+            <li>Double-coding and reconciliation</li>
+            <li>Spot checks and audit trails</li>
+            <li>Versioned codebooks and change logs</li>
+          </ul>
+        </div>
+
+        <div class="panel reveal d1">
+          <h3>Transparency</h3>
+          <p>
+            Lorem ipsum dolor sit amet: methods are documented, assumptions are stated, and outputs are reproducible.
+          </p>
+          <p>
+            For context on goals and milestones, see <a class="link-underline" href="about.html">About the Project</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Lorem ipsum dolor · FAIRWORK</span>
+      <span class="footer-copy"><a href="index.html" class="link-underline">Back to Home</a></span>
+    </div>
+  </footer>
+
+  <script>
+    const ro = new IntersectionObserver(
+      (es) => es.forEach((e) => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          ro.unobserve(e.target);
+        }
+      }),
+      { threshold: 0.09 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => ro.observe(el));
+  </script>
+</body>
+</html>
