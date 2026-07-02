@@ -5,36 +5,56 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FAIRWORK — Forecasting AI Risks and Impacts on the Workforce</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<nav>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<nav aria-label="Main navigation">
   <div class="nav-logo"><a href="index.html">FAIR<span>WORK</span></a></div>
-  <ul class="nav-links">
-    <li><a href="about.html">About the Project</a></li>
-    <li><a href="team.html">Meet the Team</a></li>
-    <li><a href="process.html">Research Process</a></li>
+  <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+    <span class="nav-icon" aria-hidden="true">menu</span>
+  </button>
+  <ul class="nav-links" id="nav-menu">
+    <li><a href="#projects">Explore</a></li>
+    <li><a href="#themes">Learn</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="team.html">Team</a></li>
   </ul>
-  <button class="nav-ask-btn" onclick="document.getElementById('ask').scrollIntoView({behavior:'smooth'})">Ask FAIRWORK</button>
 </nav>
+
+<main id="main">
 
 <!-- ═══ HERO ═══ -->
 <section id="what" class="hero">
   <div class="hero-canvas"></div>
   <div class="hero-grid"></div>
-  <div class="hero-body">
-    <div class="hero-kicker">Forecasting AI Risks and Impacts on the Workforce · Lorem ipsum dolor sit amet</div>
-    <h1 class="hero-headline">Mapping how <em>artificial intelligence</em><br>is reshaping <strong>work.</strong></h1>
-    <div class="hero-def">
-      <div class="hero-def-bar"></div>
-      <p class="hero-def-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-    <div class="hero-ctas">
-      <a class="btn-primary" href="#projects">Explore Projects</a>
-      <a class="btn-outline" href="#methodology">Our Methodology</a>
-      <a class="btn-outline" onclick="document.getElementById('ask').scrollIntoView({behavior:'smooth'})">Ask FAIRWORK ↓</a>
+  <div class="hero-layout">
+    <div class="hero-body">
+      <div class="hero-kicker">Forecasting AI Risks and Impacts on the Workforce</div>
+      <h1 class="hero-headline">
+        <span>Mapping how</span>
+        <span><em>artificial intelligence</em></span>
+        <span>is reshaping <strong>work.</strong></span>
+      </h1>
+      <div class="hero-def">
+        <div class="hero-def-bar"></div>
+        <p class="hero-def-text">FAIRWORK distills complex algorithmic transitions into actionable intelligence. We study the intersection of workforce ethics, machine learning, and labor quality.</p>
+      </div>
+      <div class="search-wrap">
+        <form class="search-bar search-bar--center" role="search" aria-label="Search FAIRWORK research" onsubmit="event.preventDefault();heroSearch();">
+          <span class="search-icon" aria-hidden="true">search</span>
+          <label class="visually-hidden" for="hero-search">Search</label>
+          <input type="search" class="search-input" id="hero-search" name="q" placeholder="Search research papers, datasets, and findings…" autocomplete="off" enterkeyhint="search">
+        </form>
+      </div>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#projects">Explore Projects</a>
+        <a class="btn-outline" href="#methodology">Our Methodology</a>
+      </div>
     </div>
   </div>
   <div class="hero-stats">
@@ -68,265 +88,239 @@
   </div>
 </div>
 
-<!-- ═══ OBJECTIVE ═══ -->
-<section class="objective-section">
-  <div class="section-header"><span class="eyebrow-fog">Our Objective</span><div class="section-rule-dark"></div></div>
-  <div class="objective-intro reveal">
-    <div><div class="obj-big">What we're<br>trying to <em>understand.</em></div></div>
-    <div class="objective-intro-right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p></div>
-  </div>
-  <div class="objective-grid">
-    <div class="obj-card reveal d1"><div class="obj-num">01 / Document</div><div class="obj-title">Build the evidence base</div><div class="obj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</div></div>
-    <div class="obj-card reveal d2"><div class="obj-num">02 / Analyze</div><div class="obj-title">Examine policy responses</div><div class="obj-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</div></div>
-    <div class="obj-card reveal d3"><div class="obj-num">03 / Train</div><div class="obj-title">Develop the next generation</div><div class="obj-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est.</div></div>
+<!-- ═══ INSIGHT OF THE MONTH ═══ -->
+<section class="insight">
+  <div class="insight-wrap reveal">
+    <div class="insight-label">Insight of the Month</div>
+    <blockquote class="insight-quote">"The invisible friction of surveillance technology often results in a 14% decrease in worker creative autonomy across technical sectors."</blockquote>
+    <p class="insight-body">This finding highlights the trade-off between efficiency metrics and long-term innovation potential in modern AI-integrated workplaces.</p>
+    <div class="insight-footer">
+      <a class="insight-link" href="#">Read Full Paper</a>
+      <div class="insight-by">
+        <div class="insight-name">Dr. Daniel Schiff</div>
+        <div class="insight-role">Principal Investigator · FAIRWORK</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ═══ PROJECTS ═══ -->
-<section id="projects" class="projects-section">
-  <div class="section-header"><span class="eyebrow">Our Projects</span><div class="section-rule"></div><span style="font-family:var(--ff-m);font-size:.6rem;letter-spacing:.1em;color:var(--fog);white-space:nowrap;">Click to explore + contribute</span></div>
+<!-- ═══ ONGOING INITIATIVES ═══ -->
+<section id="projects" class="projects">
+  <div class="section-header reveal">
+    <span class="eyebrow">Ongoing Initiatives</span>
+    <div class="section-rule"></div>
+    <span class="projects-hint">Click to explore · learn more</span>
+  </div>
   <div class="projects-grid">
-    <div class="project-card reveal d1" onclick="openProj('p1')">
-      <span class="proj-tag">Forecasting</span>
-      <div class="proj-title">AI Exposure Forecasting Database</div>
-      <div class="proj-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</div>
-      <div class="proj-status status-active"><div class="proj-status-dot"></div><span class="proj-status-text">Active · Updated bi-weekly</span></div>
-      <div class="proj-contrib">Interested in contributing? →</div>
-    </div>
-    <div class="project-card reveal d2" onclick="openProj('p2')">
+    <div class="proj-card reveal d1" onclick="openProj('p2')">
       <span class="proj-tag">Literature Review</span>
       <div class="proj-title">Systematic Literature Review (SLR)</div>
-      <div class="proj-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</div>
-      <div class="proj-status status-active"><div class="proj-status-dot"></div><span class="proj-status-text">Active · 214 papers</span></div>
-      <div class="proj-contrib">Join our coding team →</div>
+      <div class="proj-desc">Coded peer-reviewed literature on AI and the future of work.</div>
+      <div class="proj-tags">
+        <span>Open Data</span>
+        <span>Codebook</span>
+        <span>Active</span>
+      </div>
+      <div class="proj-contrib">Explore database →</div>
     </div>
-    <div class="project-card reveal d3" onclick="openProj('p3')">
+    <div class="proj-card proj-card--soon reveal d2" onclick="openProj('p1')">
+      <span class="proj-tag">Forecasting</span>
+      <div class="proj-title">AI Exposure Forecasting Database</div>
+      <div class="proj-desc">Harmonized occupational AI exposure measures.</div>
+      <div class="proj-tags">
+        <span>Forecasting</span>
+        <span>Coming Soon</span>
+      </div>
+      <div class="proj-contrib">Learn more →</div>
+    </div>
+    <div class="proj-card proj-card--soon reveal d3" onclick="openProj('p3')">
       <span class="proj-tag">Experiment</span>
       <div class="proj-title">Stakeholder Survey Experiment</div>
-      <div class="proj-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores.</div>
-      <div class="proj-status status-recruit"><div class="proj-status-dot"></div><span class="proj-status-text">Recruiting Wave 2 Respondents</span></div>
-      <div class="proj-contrib">Participate in Wave 2 →</div>
-    </div>
-    <div class="project-card reveal d4" onclick="openProj('p4')">
-      <span class="proj-tag">Geography</span>
-      <div class="proj-title">Geographic Inequality Analysis</div>
-      <div class="proj-desc">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam nisi ut aliquid ex ea commodi.</div>
-      <div class="proj-status status-active"><div class="proj-status-dot"></div><span class="proj-status-text">Active · US coverage complete</span></div>
-      <div class="proj-contrib">Collaborate on international data →</div>
-    </div>
-    <div class="project-card reveal d5" onclick="openProj('p5')">
-      <span class="proj-tag">Policy</span>
-      <div class="proj-title">Policy Response Mapping</div>
-      <div class="proj-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum dolore.</div>
-      <div class="proj-status status-recruit"><div class="proj-status-dot"></div><span class="proj-status-text">Recruiting Research Assistants</span></div>
-      <div class="proj-contrib">Help us code policy documents →</div>
-    </div>
-    <div class="project-card reveal d6" onclick="openProj('p6')">
-      <span class="proj-tag">Worker Voice</span>
-      <div class="proj-title">Worker Voice Initiative</div>
-      <div class="proj-desc">Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint.</div>
-      <div class="proj-status status-planned"><div class="proj-status-dot"></div><span class="proj-status-text">Launching Q3 2026</span></div>
-      <div class="proj-contrib">Express interest →</div>
+      <div class="proj-desc">Preregistered survey on evidence and policy preferences.</div>
+      <div class="proj-tags">
+        <span>Survey</span>
+        <span>Coming Soon</span>
+      </div>
+      <div class="proj-contrib">Learn more →</div>
     </div>
   </div>
 </section>
 
-<!-- ═══ METHODOLOGY ═══ -->
-<section id="methodology" class="method-section">
-  <div class="section-header"><span class="eyebrow-fog">How We Work</span><div class="section-rule-dark"></div></div>
-  <div style="margin-bottom:3.5rem;" class="reveal">
-    <div style="font-family:var(--ff-d);font-size:2.8rem;font-weight:300;font-style:italic;line-height:1.1;max-width:500px;">Rigorous, transparent,<br>replicable research.</div>
-  </div>
-  <div class="method-steps">
-    <div class="method-step reveal d1"><div class="method-step-num">Step 01</div><div class="method-step-title">Search &amp; Screen</div><div class="method-step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</div></div>
-    <div class="method-step reveal d2"><div class="method-step-num">Step 02</div><div class="method-step-title">Independent Coding</div><div class="method-step-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div></div>
-    <div class="method-step reveal d3"><div class="method-step-num">Step 03</div><div class="method-step-title">Reconcile &amp; Validate</div><div class="method-step-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim laborum.</div></div>
-    <div class="method-step reveal d4"><div class="method-step-num">Step 04</div><div class="method-step-title">Analyze &amp; Visualize</div><div class="method-step-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur magni.</div></div>
-    <div class="method-step reveal d5"><div class="method-step-num">Step 05</div><div class="method-step-title">Publish Everything</div><div class="method-step-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</div></div>
-  </div>
-  <div class="method-note reveal">
-    <div class="method-note-card">
-      <div class="mnc-title">Commitment to Transparency</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
-    </div>
-    <div class="method-note-card" style="background:rgba(26,128,174,.08);border:1px solid rgba(26,128,174,.25);">
-      <div class="mnc-title" style="color:var(--teal);">What our data can — and can't — tell you</div>
-      <p style="color:rgba(10,10,10,.6);">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt mollit anim laborum.</p>
-    </div>
+<!-- ═══ CORE RESEARCH THEMES ═══ -->
+<section class="sec-themes" id="themes">
+  <div class="section-header"><span class="eyebrow-dim">Core Research Themes</span><div class="rule-dim"></div></div>
+  <div class="themes-grid themes--light">
+    <div class="theme-card reveal d1"><div class="theme-num">01</div><div class="theme-title">Automation</div><p class="theme-desc">Tracking the pace of task displacement across 42 industry categories with focus on manufacturing.</p></div>
+    <div class="theme-card reveal d2"><div class="theme-num">02</div><div class="theme-title">Skill Transitions</div><p class="theme-desc">Identifying effective reskilling pathways for workers transitioning into AI-collaborative roles.</p></div>
+    <div class="theme-card reveal d3"><div class="theme-num">03</div><div class="theme-title">Job Quality</div><p class="theme-desc">Measuring psychological well-being and job satisfaction in algorithm-managed environments.</p></div>
+    <div class="theme-card reveal d4"><div class="theme-num">04</div><div class="theme-title">Human–AI Collaboration</div><p class="theme-desc">Optimizing the interface between human intuition and machine predictive power in high-stakes fields.</p></div>
+    <div class="theme-card reveal d5"><div class="theme-num">05</div><div class="theme-title">Worker Surveillance</div><p class="theme-desc">Evaluating the legal and ethical implications of continuous biometric and digital activity monitoring.</p></div>
+    <div class="theme-card reveal d6"><div class="theme-num">06</div><div class="theme-title">Policy Responses</div><p class="theme-desc">Advising governments on legislative adaptive capacity to keep pace with technological change.</p></div>
   </div>
 </section>
 
-<!-- ═══ WHO IS IT FOR ═══ -->
-<section class="audience-section">
-  <div class="section-header"><span class="eyebrow">Who Is It For?</span><div class="section-rule"></div></div>
+<!-- ═══ HOW WE WORK & HOW TO USE ═══ -->
+<section id="methodology" class="method">
+  <div class="section-header"><span class="eyebrow-dim">How We Work &amp; How to Use FAIRWORK</span><div class="rule-dim"></div></div>
+  <div class="method-lead reveal">
+    <div class="method-tagline">Rigorous, transparent,<br>replicable research.</div>
+    <p class="method-copy">FAIRWORK produces open evidence for policymakers, researchers, workers, and journalists. Every dataset ships with a codebook; every method is documented for replication.</p>
+  </div>
+  <div class="method-notes reveal">
+    <div class="note">
+      <div class="note-hd">Commitment to Transparency</div>
+      <p>We publish codebooks, inter-rater reliability scores, and full search protocols alongside every release so findings can be scrutinized and extended by others.</p>
+    </div>
+    <div class="note note--teal">
+      <div class="note-hd">What our data can — and can't — tell you</div>
+      <p>Our evidence maps trends and associations in peer-reviewed research — not causal claims about every workplace. We flag contested findings and methodological limits explicitly.</p>
+    </div>
+    <div class="note note--rust">
+      <div class="note-hd">Open Access Commitment</div>
+      <p>Public datasets, transparent methods, and freely available resources. Every dataset ships with a codebook; CC-BY licensed data available for researchers and educators.</p>
+    </div>
+  </div>
   <div class="audience-grid">
-    <div class="audience-card reveal d1"><div class="aud-title">Policymakers</div><div class="aud-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</div><ul class="aud-uses"><li>Lorem ipsum dolor sit amet consectetur</li><li>Sed do eiusmod tempor incididunt labore</li><li>Ut enim ad minim veniam quis nostrud</li></ul></div>
-    <div class="audience-card reveal d2"><div class="aud-title">Researchers &amp; Educators</div><div class="aud-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</div><ul class="aud-uses"><li>Excepteur sint occaecat cupidatat non</li><li>Proident sunt in culpa qui officia</li><li>Deserunt mollit anim id est laborum</li></ul></div>
-    <div class="audience-card reveal d3"><div class="aud-title">Workers &amp; Unions</div><div class="aud-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit consequuntur.</div><ul class="aud-uses"><li>Neque porro quisquam est qui dolorem</li><li>Ipsum quia dolor sit amet consectetur</li><li>Adipisci velit sed quia non numquam</li></ul></div>
-    <div class="audience-card reveal d4"><div class="aud-title">Journalists &amp; Media</div><div class="aud-desc">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae.</div><ul class="aud-uses"><li>Ut labore et dolore magnam aliquam</li><li>Quis nostrum exercitationem ullam corporis</li><li>Suscipit laboriosam nisi ut aliquid</li></ul></div>
+    <div class="audience-card reveal d1"><div class="aud-title">Policymakers</div><div class="aud-desc">Access evidence-based briefs on algorithmic governance, worker protections, and legislative adaptive capacity.</div></div>
+    <div class="audience-card reveal d2"><div class="aud-title">Researchers &amp; Educators</div><div class="aud-desc">Use harmonized datasets, coded literature, and transparent methods for teaching and secondary analysis.</div></div>
+    <div class="audience-card reveal d3"><div class="aud-title">Workers &amp; Unions</div><div class="aud-desc">Understand how AI and surveillance technologies affect job quality, autonomy, and collective bargaining.</div></div>
+    <div class="audience-card reveal d4"><div class="aud-title">Journalists &amp; Media</div><div class="aud-desc">Get rigorously sourced statistics and expert context for stories on AI and the future of work.</div></div>
+  </div>
+</section>
+
+<!-- ═══ ACHIEVEMENTS ═══ -->
+<section id="achievements" class="achieve">
+  <div class="achieve-wrap">
+    <div class="section-header achieve-hd reveal">
+      <span class="eyebrow-dim">Achievements</span>
+      <div class="rule-dim"></div>
+    </div>
+    <div class="achieve-grid">
+      <article class="achieve-card reveal d1">
+        <div class="achieve-yr">2024</div>
+        <h3 class="achieve-title">Systematic review complete</h3>
+        <p class="achieve-desc">200+ peer-reviewed papers coded across automation, job quality, and policy.</p>
+      </article>
+      <article class="achieve-card reveal d2">
+        <div class="achieve-yr">2024</div>
+        <h3 class="achieve-title">Open research database</h3>
+        <p class="achieve-desc">Searchable portal launched for policymakers, journalists, and researchers.</p>
+      </article>
+      <article class="achieve-card reveal d3">
+        <div class="achieve-yr">2023</div>
+        <h3 class="achieve-title">NSF research grant</h3>
+        <p class="achieve-desc">Multi-year funding secured to map AI risks and impacts on the workforce.</p>
+      </article>
+      <article class="achieve-card reveal d4">
+        <div class="achieve-yr">2024</div>
+        <h3 class="achieve-title">Policy briefs in use</h3>
+        <p class="achieve-desc">FAIRWORK synthesis cited in legislative briefings on AI and labor standards.</p>
+      </article>
+    </div>
   </div>
 </section>
 
 <!-- ═══ TEAM ═══ -->
-<section id="team" class="team-section">
-  <div class="section-header"><span class="eyebrow-fog">The People</span><div class="section-rule-dark"></div></div>
+<section id="team" class="team">
+  <div class="section-header"><span class="eyebrow-dim">The People</span><div class="rule-dim"></div></div>
   <div class="team-intro reveal">
     <div class="team-headline">The researchers<br>behind the <em>project.</em></div>
-    <div class="team-intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+    <div class="team-copy">FAIRWORK's core research team at Purdue studies how AI reshapes labor markets, job quality, and workforce policy. <a href="team.html" class="inline-link">Meet the full team →</a></div>
   </div>
 
-  <div class="team-label">Faculty</div>
   <div class="team-grid">
     <div class="team-card reveal d1">
-      <div class="team-avi" style="font-size:.65rem;letter-spacing:.06em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">PI</div>
-      <div class="team-name">Lorem Ipsum</div>
-      <div class="team-role">Principal Investigator · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.</div>
+      <div class="team-avi">PI</div>
+      <div class="team-name">Daniel Schiff</div>
+      <div class="team-role">Principal Investigator · FAIRWORK</div>
+      <div class="team-bio">Leads FAIRWORK's research agenda on algorithmic management, worker surveillance, and labor market forecasting at Purdue.</div>
     </div>
     <div class="team-card reveal d2">
-      <div class="team-avi" style="font-size:.65rem;letter-spacing:.06em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">Co-I</div>
+      <div class="team-avi">Co-I</div>
       <div class="team-name">Dolor Sit Amet</div>
       <div class="team-role">Co-Investigator · Lorem ipsum dolor sit amet</div>
       <div class="team-bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</div>
     </div>
     <div class="team-card reveal d3">
-      <div class="team-avi" style="font-size:.65rem;letter-spacing:.06em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">Co-I</div>
+      <div class="team-avi">Co-I</div>
       <div class="team-name">Consectetur Adipiscing</div>
       <div class="team-role">Co-Investigator · Lorem ipsum dolor sit amet</div>
       <div class="team-bio">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</div>
     </div>
   </div>
+</section>
 
-  <div class="team-label">Graduate Researchers</div>
-  <div class="team-grid" style="grid-template-columns:repeat(2,1fr);">
-    <div class="team-card reveal d1">
-      <div class="team-avi" style="font-size:.65rem;letter-spacing:.06em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">Grad</div>
-      <div class="team-name">Sed Do Eiusmod</div>
-      <div class="team-role">Graduate Researcher · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</div>
-    </div>
-    <div class="team-card reveal d2">
-      <div class="team-avi" style="font-size:.65rem;letter-spacing:.06em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">Grad</div>
-      <div class="team-name">Tempor Incididunt</div>
-      <div class="team-role">Graduate Researcher · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint.</div>
-    </div>
-  </div>
-
-  <div class="team-label">Undergraduate Researchers</div>
-  <div class="team-grid team-grid-6">
-    <div class="team-card reveal d1">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Ut Labore Et</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Lorem ipsum dolor sit amet.</div>
-    </div>
-    <div class="team-card reveal d2">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Dolore Magna Aliqua</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Consectetur adipiscing elit sed.</div>
-    </div>
-    <div class="team-card reveal d3">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Ut Enim Ad</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Sed do eiusmod tempor incididunt.</div>
-    </div>
-    <div class="team-card reveal d4">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Minim Veniam Quis</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Ut labore et dolore magna aliqua.</div>
-    </div>
-    <div class="team-card reveal d5">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Nostrud Exercitation</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Duis aute irure dolor reprehenderit.</div>
-    </div>
-    <div class="team-card reveal d6">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Ullamco Laboris</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Voluptate velit esse cillum dolore.</div>
-    </div>
-  </div>
-  <div class="team-grid" style="grid-template-columns:repeat(2,1fr);margin-top:2px;">
-    <div class="team-card reveal d1">
-      <div class="team-avi" style="font-size:.6rem;letter-spacing:.05em;font-family:var(--ff-m);font-weight:500;color:var(--fog2);">UG</div>
-      <div class="team-name">Nisi Ut Aliquip</div>
-      <div class="team-role">Undergraduate RA · Lorem ipsum dolor sit amet</div>
-      <div class="team-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</div>
+<!-- ═══ JOIN THE DIALOGUE ═══ -->
+<section id="involve" class="dialogue">
+  <div class="dialogue-wrap reveal">
+    <h2 class="dialogue-hd">Join the <em>dialogue.</em></h2>
+    <p class="dialogue-text">Help us shape a future where technology amplifies human potential rather than replacing it.</p>
+    <div class="dialogue-actions">
+      <a class="btn-primary" href="#projects">Explore the Data</a>
+      <button type="button" class="btn-outline" onclick="openInvolve()">Get Involved</button>
     </div>
   </div>
 </section>
 
-<!-- ═══ HOW TO USE ═══ -->
-<section id="howto" class="howto-section">
-  <div class="section-header"><span class="eyebrow">Using Our Research</span><div class="section-rule"></div></div>
-  <div class="howto-grid">
-    <div class="reveal">
-      <h2 class="hw-headline">How to use<br>our <em>research.</em></h2>
-      <p class="hw-sub">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
-      <div class="hw-paths">
-        <div class="hw-path"><div><div class="hw-path-label">Explore the Dashboard</div><div class="hw-path-sub">Incididunt ut labore et dolore magna aliqua</div></div><span class="hw-path-arr">→</span></div>
-        <div class="hw-path"><div><div class="hw-path-label">Search the Literature</div><div class="hw-path-sub">Filter 200+ papers by method, geography, industry</div></div><span class="hw-path-arr">→</span></div>
-        <div class="hw-path"><div><div class="hw-path-label">Download Raw Data</div><div class="hw-path-sub">CC-BY licensed CSVs with full codebook documentation</div></div><span class="hw-path-arr">→</span></div>
-        <div class="hw-path" onclick="document.getElementById('ask').scrollIntoView({behavior:'smooth'})"><div><div class="hw-path-label">Ask FAIRWORK</div><div class="hw-path-sub">Q&amp;A grounded in our research corpus</div></div><span class="hw-path-arr">→</span></div>
-      </div>
-    </div>
-    <div class="howto-steps reveal d2">
-      <div class="hw-step"><div class="hw-step-left"><div class="hw-step-num">1</div><div class="hw-step-line"></div></div><div class="hw-step-content"><div class="hw-step-title">Lorem ipsum dolor sit amet</div><div class="hw-step-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim veniam.</div></div></div>
-      <div class="hw-step"><div class="hw-step-left"><div class="hw-step-num">2</div><div class="hw-step-line"></div></div><div class="hw-step-content"><div class="hw-step-title">Consectetur adipiscing elit</div><div class="hw-step-desc">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</div></div></div>
-      <div class="hw-step"><div class="hw-step-left"><div class="hw-step-num">3</div><div class="hw-step-line"></div></div><div class="hw-step-content"><div class="hw-step-title">Sed do eiusmod tempor</div><div class="hw-step-desc">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum nemo enim.</div></div></div>
-      <div class="hw-step"><div class="hw-step-left"><div class="hw-step-num">4</div><div class="hw-step-line"></div></div><div class="hw-step-content"><div class="hw-step-title">Ut labore et dolore magna</div><div class="hw-step-desc">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos ratione.</div></div></div>
-    </div>
-  </div>
-</section>
+<!-- (Ask FAIRWORK) — hidden for Phase 2 -->
+<div id="ask" class="ask-section is-hidden" hidden aria-hidden="true">
+  <input type="password" id="ask-key" tabindex="-1">
+  <input type="text" id="ask-input" tabindex="-1">
+  <div id="ask-response"><span id="ask-dot"></span><span id="ask-label"></span><div id="ask-text"></div></div>
+</div>
 
-<!-- ═══ ASK FAIRWORK ═══ -->
-<section id="ask" class="ask-section">
-  <div class="ask-inner">
-    <div class="section-header" style="justify-content:center;margin-bottom:1.5rem;"><span class="eyebrow-fog">Q&amp;A</span></div>
-    <h2 class="ask-headline reveal">Ask <em>FAIRWORK</em></h2>
-    <p class="ask-sub reveal d1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <div class="ask-wrap reveal d2">
-      <input type="text" class="ask-input" id="ask-input" placeholder="e.g. Which jobs face the highest AI exposure? What does the research say about nurses?" onkeydown="if(event.key==='Enter')doAsk()">
-      <button class="ask-submit" onclick="doAsk()">Ask →</button>
+<!-- ═══ GRAIL & PURDUE ═══ -->
+<section id="grail" class="affil">
+  <div class="affil-wrap reveal">
+    <p class="affil-label">Affiliated with</p>
+    <div class="affil-logos">
+      <a class="affil-logo affil-logo--purdue" href="https://www.purdue.edu/" target="_blank" rel="noopener" aria-label="Purdue University">
+        <img src="images/purdue.jpg" alt="Purdue University logo">
+      </a>
+      <span class="affil-rule" aria-hidden="true"></span>
+      <a class="affil-logo affil-logo--grail" href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" target="_blank" rel="noopener" aria-label="GRAIL Lab">
+        <img src="images/grail.png" alt="GRAIL logo">
+      </a>
     </div>
-    <div class="ask-chips reveal d3">
-      <button class="ask-chip" onclick="setQ('Which jobs face the highest AI exposure risk?')">Which jobs are most at risk?</button>
-      <button class="ask-chip" onclick="setQ('What does the research say about AI and wages?')">AI &amp; wages</button>
-      <button class="ask-chip" onclick="setQ('How do different AI exposure measures compare?')">Comparing measures</button>
-      <button class="ask-chip" onclick="setQ('What policy responses have the strongest evidence base?')">Policy evidence</button>
-      <button class="ask-chip" onclick="setQ('What does FAIRWORK research say about healthcare workers and AI?')">Healthcare workers</button>
-      <button class="ask-chip" onclick="setQ('How did you code papers in your systematic literature review?')">How papers are coded</button>
-    </div>
-    <div class="ask-response" id="ask-response">
-      <button class="ask-close" onclick="closeAsk()">✕</button>
-      <div class="ask-resp-label"><div class="ask-resp-dot" id="ask-dot"></div><span id="ask-label">FAIRWORK</span></div>
-      <div class="ask-resp-text" id="ask-text"></div>
-    </div>
+    <p class="affil-copy">FAIRWORK is housed within the <strong>Governance and Responsible AI Lab (GRAIL)</strong> at Purdue University — advancing rigorous, policy-relevant research on AI and the future of work.</p>
+    <a class="affil-btn" href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" target="_blank" rel="noopener">Visit GRAIL at Purdue</a>
   </div>
 </section>
 
 <!-- ═══ FOOTER ═══ -->
 <footer>
   <div class="footer-top">
-    <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-tagline">Forecasting AI Risks and Impacts on the Workforce. A research project at lorem ipsum dolor sit amet. Open access. Open data.</p></div>
-    <div><div class="footer-col-head">Navigate</div><ul class="footer-links"><li><a href="#what">About</a></li><li><a href="#projects">Projects</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#team">Team</a></li><li><a href="#ask">Ask FAIRWORK</a></li></ul></div>
-    <div><div class="footer-col-head">Research</div><ul class="footer-links"><li><a href="#">Research Dashboard</a></li><li><a href="#">Research Explorer</a></li><li><a href="#">Download Data</a></li><li><a href="#">Codebook (PDF)</a></li></ul></div>
-    <div><div class="footer-col-head">Connect</div><ul class="footer-links"><li><a href="#">Contact Us</a></li><li><a href="#">GitHub</a></li><li><a href="#">Newsletter</a></li><li><a href="#">Submit a Paper</a></li><li><a href="#">Press Inquiries</a></li></ul></div>
+    <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-lead">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
+    <div><div class="footer-hd">Research</div><ul class="footer-links"><li><a href="team.html#publications">Latest Findings</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#projects">Data Portal</a></li><li><a href="team.html#publications">Archive</a></li></ul></div>
+    <div><div class="footer-hd">Resources</div><ul class="footer-links"><li><a href="team.html#publications">Policy Briefs</a></li><li><a href="#">Whitepapers</a></li><li><a href="#themes">Research Themes</a></li><li><a href="#projects">Workshops</a></li></ul></div>
+    <div><div class="footer-hd">Connect</div><ul class="footer-links"><li><a href="#involve">Join the Dialogue</a></li><li><a href="mailto:funding@fairwork.org?subject=Funding%20Interest">Funding</a></li><li><a href="#grail">GRAIL &amp; Purdue</a></li><li><a href="#">Contact</a></li></ul></div>
   </div>
-  <div class="footer-bottom"><span class="footer-copy">© 2026 Lorem ipsum dolor · Forecasting AI Risks and Impacts on the Workforce · CC-BY 4.0</span><span class="footer-copy">Made with open data, open minds.</span></div>
+  <div class="footer-bottom"><span class="footer-copy">© 2024 FAIRWORK Research Portal. A Purdue-Inspired Initiative.</span><span class="footer-copy">Privacy · Terms · Cookies</span></div>
 </footer>
+</main>
+
+<!-- ═══ GET INVOLVED MODAL ═══ -->
+<div class="modal-bg" id="modal-bg" onclick="closeInvolve()"></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-hd" hidden>
+  <button type="button" class="modal-close" onclick="closeInvolve()" aria-label="Close">✕</button>
+  <h2 class="modal-hd" id="modal-hd">Get Involved</h2>
+  <p class="modal-copy">Tell us how you'd like to contribute to FAIRWORK research.</p>
+  <form class="modal-form" onsubmit="event.preventDefault();this.querySelector('.modal-submit').textContent='✓ Sent — we\'ll be in touch.';this.querySelector('.modal-submit').disabled=true;">
+    <label class="visually-hidden" for="involve-name">Full name</label>
+    <input type="text" class="modal-inp" id="involve-name" name="name" placeholder="Full name" required autocomplete="name">
+    <label class="visually-hidden" for="involve-email">Email</label>
+    <input type="email" class="modal-inp" id="involve-email" name="email" placeholder="Email address" required autocomplete="email">
+    <label class="visually-hidden" for="involve-message">Message</label>
+    <textarea class="modal-inp modal-ta" id="involve-message" name="message" placeholder="Message (optional)" rows="4"></textarea>
+    <button type="submit" class="btn-primary modal-submit">Send</button>
+  </form>
+</div>
 
 <!-- ═══ PROJECT PANEL ═══ -->
 <div class="proj-overlay" id="overlay" onclick="closeProj()"></div>
 <div class="proj-panel" id="panel">
   <div class="proj-panel-head">
-    <div style="font-family:var(--ff-m);font-size:.6rem;letter-spacing:.15em;text-transform:uppercase;color:var(--rust2);" id="panel-tag-head">Project</div>
+    <div class="proj-panel-tag" id="panel-tag-head">Project</div>
     <button class="proj-panel-close" onclick="closeProj()">✕</button>
   </div>
   <div class="proj-panel-body" id="panel-body"></div>
@@ -367,7 +361,7 @@ function openProj(id) {
   document.getElementById('panel-body').innerHTML = `
     <div class="panel-kicker">${p.tag}</div>
     <div class="panel-title">${p.title}</div>
-    <div style="display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1.75rem;font-family:var(--ff-m);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:${sb.c};">
+    <div style="display:inline-flex;align-items:center;gap:.5rem;margin-bottom:1.75rem;font-family:var(--ff-u);font-size:.6rem;letter-spacing:.1em;text-transform:uppercase;color:${sb.c};">
       <span style="width:6px;height:6px;border-radius:50%;background:${sb.c};${p.status!=='planned'?'animation:pulse 2s infinite':''}"></span>${sb.l}
     </div>
     <div class="panel-lead">${p.lead}</div>
@@ -392,12 +386,32 @@ function closeProj() {
   document.getElementById('panel').classList.remove('open');
   document.body.style.overflow = '';
 }
-document.addEventListener('keydown', e => { if(e.key==='Escape') closeProj(); });
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeProj(); closeInvolve(); }
+});
+
+function openInvolve() {
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('modal-bg');
+  modal.hidden = false;
+  overlay.classList.add('open');
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('involve-name').focus();
+}
+function closeInvolve() {
+  const modal = document.getElementById('modal');
+  const overlay = document.getElementById('modal-bg');
+  modal.hidden = true;
+  overlay.classList.remove('open');
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 // ═════════════════════════════════
 // ASK FAIRWORK
 // ═════════════════════════════════
-const SYS = `You are FAIRWORK, an AI research assistant for the FAIRWORK project — Forecasting AI Risks and Impacts on the Workforce — at lorem ipsum dolor sit amet.
+const SYS = `You are FAIRWORK, an AI research assistant for the FAIRWORK project — Forecasting AI Risks and Impacts on the Workforce — a Purdue-inspired initiative within the GRAIL research network.
 
 The FAIRWORK project investigates how artificial intelligence is reshaping labor markets, job structures, and workforce policy. Through systematic review and qualitative coding of hundreds of academic studies, the project builds a structured database mapping key trends in AI-driven automation, job displacement, skill shifts, and worker well-being. The research also examines policy responses including regulation, education, and worker protections. Undergraduate researchers play a central role in the coding and analysis process.
 
@@ -416,6 +430,20 @@ Always be precise about what evidence shows vs. does not show. Flag contested fi
 
 function setQ(t){document.getElementById('ask-input').value=t;document.getElementById('ask-input').focus();}
 
+function heroSearch() {
+  const q = document.getElementById('hero-search').value.trim();
+  if (!q) return;
+  /* (Ask FAIRWORK) — Phase 2 */
+}
+
+document.getElementById('nav-toggle').addEventListener('click', function () {
+  const open = this.getAttribute('aria-expanded') === 'true';
+  this.setAttribute('aria-expanded', String(!open));
+  this.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
+  this.querySelector('.nav-icon').textContent = open ? 'menu' : 'close';
+  document.getElementById('nav-menu').classList.toggle('open', !open);
+});
+
 async function doAsk() {
   const q = document.getElementById('ask-input').value.trim();
   const key = document.getElementById('ask-key').value.trim();
@@ -428,7 +456,7 @@ async function doAsk() {
     resp.classList.add('visible');
     dot.style.background='var(--gold2)';dot.style.animation='none';
     lbl.textContent='Setup needed';
-    txt.innerHTML='To use Ask FAIRWORK, enter your Anthropic API key above (starts with <code style="font-family:var(--ff-m);font-size:.85em;color:var(--rust2)">sk-ant-</code>). It\'s used only in your browser and never stored. <a href="https://console.anthropic.com" target="_blank" style="color:var(--rust2);text-decoration:underline;">Get a key at console.anthropic.com →</a>';
+    txt.innerHTML='To use Ask FAIRWORK, enter your Anthropic API key above (starts with <code style="font-family:var(--ff-u);font-size:.85em;color:var(--rust2)">sk-ant-</code>). It\'s used only in your browser and never stored. <a href="https://console.anthropic.com" target="_blank" style="color:var(--rust2);text-decoration:underline;">Get a key at console.anthropic.com →</a>';
     return;
   }
   resp.classList.add('visible');
@@ -451,8 +479,9 @@ async function doAsk() {
     txt.textContent=`Could not get a response: ${e.message}. Check your API key and try again.`;
   }
 }
-function closeAsk(){document.getElementById('ask-response').classList.remove('visible');document.getElementById('ask-text').textContent='';}
-document.getElementById('ask-key').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('ask-input').focus();});
+function closeAsk(){const r=document.getElementById('ask-response');if(r)r.classList.remove('visible');const t=document.getElementById('ask-text');if(t)t.textContent='';}
+const askKey=document.getElementById('ask-key');
+if(askKey)askKey.addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('ask-input')?.focus();});
 </script>
 </body>
 </html>

@@ -1,38 +1,5 @@
 @import url("styles.css");
-
-.page-hero {
-  padding: 9.5rem 3rem 3.5rem;
-  background: radial-gradient(ellipse 60% 55% at 70% 25%, rgba(26,128,174,.18) 0%, transparent 60%);
-  border-bottom: 1px solid rgba(244,239,230,.06);
-}
-
-.page-hero h1 {
-  font-family: var(--ff-d);
-  font-size: clamp(2.8rem, 5vw, 4.6rem);
-  font-weight: 300;
-  line-height: 1.05;
-  letter-spacing: -.02em;
-  max-width: 980px;
-}
-
-.page-hero p {
-  margin-top: 1.25rem;
-  max-width: 760px;
-  font-family: var(--ff-d);
-  font-size: 1.1rem;
-  font-weight: 300;
-  line-height: 1.85;
-  color: rgba(244,239,230,.7);
-}
-
-.page-wrap {
-  padding: 5.5rem 3rem 6rem;
-  background: var(--ink);
-}
-
-.section-spacer {
-  margin-top: 5rem;
-}
+@import url("pages.css");
 
 .steps {
   display: grid;
@@ -48,8 +15,9 @@
 }
 
 .step-num {
-  font-family: var(--ff-m);
-  font-size: .62rem;
+  font-family: var(--ff-u);
+  font-size: var(--text-label);
+  font-weight: 700;
   letter-spacing: .15em;
   text-transform: uppercase;
   color: var(--fog2);
@@ -58,7 +26,7 @@
 
 .step-title {
   font-family: var(--ff-d);
-  font-size: 1.4rem;
+  font-size: var(--type-card);
   font-weight: 300;
   color: var(--cream);
   line-height: 1.2;
@@ -66,8 +34,8 @@
 }
 
 .step-desc {
-  font-size: .9rem;
-  line-height: 1.8;
+  font-size: var(--text-sm);
+  line-height: 1.75;
   color: rgba(244,239,230,.7);
 }
 
@@ -86,8 +54,9 @@
 }
 
 .panel h3 {
-  font-size: .78rem;
-  font-weight: 800;
+  font-family: var(--ff-u);
+  font-size: var(--text-label);
+  font-weight: 700;
   letter-spacing: .14em;
   text-transform: uppercase;
   color: var(--gold2);
@@ -96,19 +65,14 @@
 
 .panel p,
 .panel li {
-  font-size: .92rem;
-  line-height: 1.85;
+  font-size: var(--text-sm);
+  line-height: 1.75;
   color: rgba(244,239,230,.7);
 }
 
 .panel ul {
   margin-top: 1rem;
   padding-left: 1.2rem;
-}
-
-.link-underline {
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
 
 @media (max-width: 1024px) {
@@ -118,13 +82,5 @@
 
   .qc-grid {
     grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 768px) {
-  .page-hero,
-  .page-wrap {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
   }
 }

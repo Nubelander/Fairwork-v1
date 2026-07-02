@@ -1,0 +1,35 @@
+/* Acumin Pro — body text only (self-host .woff2 in /fonts/ or use local install) */
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local('Acumin Pro'),
+    local('Acumin Pro Regular'),
+    local('AcuminPro-Regular'),
+    url('../fonts/AcuminPro-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src:
+    local('Acumin Pro Semibold'),
+    local('AcuminPro-Semibold'),
+    url('../fonts/AcuminPro-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Acumin Pro Bold'),
+    local('AcuminPro-Bold'),
+    url('../fonts/AcuminPro-Bold.woff2') format('woff2');
+}
