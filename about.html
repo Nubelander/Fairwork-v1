@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About the Project - FAIRWORK</title>
+  <title>About the Project — FAIRWORK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
   <nav aria-label="Main navigation">
     <div class="nav-logo"><a href="index.html">FAIR<span>WORK</span></a></div>
     <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-      <span class="nav-icon" aria-hidden="true">menu</span>
+      <span class="nav-toggle-icon" aria-hidden="true">menu</span>
     </button>
     <ul class="nav-links" id="nav-menu">
       <li><a href="index.html#projects">Explore</a></li>
@@ -27,7 +27,7 @@
 
   <header class="page-hero">
     <div class="eyebrow">About the Project</div>
-    <h1>Understanding how AI is reshaping work  and what we can do about it.</h1>
+    <h1>Understanding how AI is reshaping work — and what we can do about it.</h1>
     <p>FAIRWORK is a research initiative at Purdue focused on workforce ethics, machine learning, and labor quality. We build open evidence for policymakers, researchers, and the public.</p>
 
     <div class="subnav">
@@ -57,7 +57,7 @@
         <div class="card reveal d1">
           <h3>Our vision</h3>
           <p>
-            Help shape a future where technology amplifies human potential rather than replacing it. FAIRWORK investigates how AI is reshaping labor markets, job structures, and workforce policy - building structured databases from systematic review and qualitative coding of hundreds of academic studies.
+            Help shape a future where technology amplifies human potential rather than replacing it. FAIRWORK investigates how AI is reshaping labor markets, job structures, and workforce policy — building structured databases from systematic review and qualitative coding of hundreds of academic studies.
           </p>
         </div>
       </div>
@@ -65,10 +65,10 @@
       <div class="card reveal d2 section-spacer" id="grail">
         <h3>GRAIL &amp; Purdue</h3>
         <p>
-          FAIRWORK is housed within the <strong>Governance and Responsible AI Lab (GRAIL)</strong> at Purdue University. GRAIL brings together interdisciplinary scholars studying the governance, ethics, and societal impacts of artificial intelligence - mapping trends in AI-driven automation, job displacement, skill shifts, worker well-being, and policy responses.
+          FAIRWORK is housed within the <strong>Governance and Responsible AI Lab (GRAIL)</strong> at Purdue University. GRAIL brings together interdisciplinary scholars studying the governance, ethics, and societal impacts of artificial intelligence — mapping trends in AI-driven automation, job displacement, skill shifts, worker well-being, and policy responses.
         </p>
         <p class="mt-1">
-          <a href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" class="link-underline" target="_blank" rel="noopener">Visit GRAIL at Purdue</a>
+          <a href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" class="link-underline" target="_blank" rel="noopener">Visit GRAIL at Purdue →</a>
         </p>
       </div>
     </section>
@@ -178,10 +178,10 @@
 
   <footer class="site-footer">
     <div class="footer-top">
-      <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-lead">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
-      <div><div class="footer-hd">Research</div><ul class="footer-links"><li><a href="team.html#publications">Latest Findings</a></li><li><a href="index.html#methodology">Methodology</a></li><li><a href="index.html#projects">Data Portal</a></li></ul></div>
-      <div><div class="footer-hd">Resources</div><ul class="footer-links"><li><a href="index.html#themes">Research Themes</a></li><li><a href="about.html">About</a></li><li><a href="process.html">Research Process</a></li></ul></div>
-      <div><div class="footer-hd">Connect</div><ul class="footer-links"><li><a href="index.html#involve">Join the Dialogue</a></li><li><a href="index.html#grail">GRAIL &amp; Purdue</a></li></ul></div>
+      <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-tagline">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
+      <div><div class="footer-col-head">Research</div><ul class="footer-links"><li><a href="team.html#publications">Latest Findings</a></li><li><a href="index.html#methodology">Methodology</a></li><li><a href="index.html#projects">Data Portal</a></li></ul></div>
+      <div><div class="footer-col-head">Resources</div><ul class="footer-links"><li><a href="index.html#themes">Research Themes</a></li><li><a href="about.html">About</a></li><li><a href="process.html">Research Process</a></li></ul></div>
+      <div><div class="footer-col-head">Connect</div><ul class="footer-links"><li><a href="index.html#involve">Join the Dialogue</a></li><li><a href="index.html#grail">GRAIL &amp; Purdue</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span class="footer-copy">© 2024 FAIRWORK Research Portal. A Purdue-Inspired Initiative.</span><span class="footer-copy"><a href="index.html" class="link-underline">Home</a></span></div>
   </footer>
@@ -202,7 +202,7 @@
       const open = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!open));
       this.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
-      this.querySelector('.nav-icon').textContent = open ? 'menu' : 'close';
+      this.querySelector('.nav-toggle-icon').textContent = open ? 'menu' : 'close';
       document.getElementById('nav-menu').classList.toggle('open', !open);
     });
   </script>
