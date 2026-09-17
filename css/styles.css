@@ -1594,6 +1594,26 @@ nav {
   border-color: var(--ink);
 }
 
+.affil-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.affil-btn--filled {
+  background: var(--rust);
+  color: var(--cream);
+  border-color: var(--rust);
+}
+
+.affil-btn--filled:hover {
+  background: var(--ink);
+  color: var(--cream);
+  border-color: var(--ink);
+}
+
 /* OBJECTIVE */
 .sec-themes {
   background: var(--cream);
@@ -2319,7 +2339,7 @@ nav {
 }
 
 .note .note-hd {
-  font-family: var(--ff-u);
+  font-family: var(--ff-body);
   font-size: var(--text-label);
   font-weight: 700;
   letter-spacing: .12em;
