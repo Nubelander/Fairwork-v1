@@ -1,4 +1,4 @@
-/* Acumin Pro — body text only (self-host .woff2 in /fonts/ or use local install) */
+/* Acumin Pro — body text only (self-hosted .otf in /fonts/) */
 
 @font-face {
   font-family: 'Acumin Pro';
@@ -9,18 +9,18 @@
     local('Acumin Pro'),
     local('Acumin Pro Regular'),
     local('AcuminPro-Regular'),
-    url('../fonts/AcuminPro-Regular.woff2') format('woff2');
+    url('../fonts/Acumin-RPro.otf') format('opentype');
 }
 
 @font-face {
   font-family: 'Acumin Pro';
-  font-style: normal;
-  font-weight: 600;
+  font-style: italic;
+  font-weight: 400;
   font-display: swap;
   src:
-    local('Acumin Pro Semibold'),
-    local('AcuminPro-Semibold'),
-    url('../fonts/AcuminPro-Semibold.woff2') format('woff2');
+    local('Acumin Pro Italic'),
+    local('AcuminPro-Italic'),
+    url('../fonts/Acumin-ItPro.otf') format('opentype');
 }
 
 @font-face {
@@ -31,5 +31,16 @@
   src:
     local('Acumin Pro Bold'),
     local('AcuminPro-Bold'),
-    url('../fonts/AcuminPro-Bold.woff2') format('woff2');
+    url('../fonts/Acumin-BdPro.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Acumin Pro';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local('Acumin Pro Bold Italic'),
+    local('AcuminPro-BoldItalic'),
+    url('../fonts/Acumin-BdItPro.otf') format('opentype');
 }

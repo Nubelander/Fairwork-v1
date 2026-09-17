@@ -78,13 +78,13 @@ Display headlines use `clamp()` for responsive sizing. Minimum body size on publ
 
 ```html
 <div class="section-header">
-  <span class="eyebrow-dim">Section Label</span>
-  <div class="rule-dim"></div>
+  <span class="eyebrow-fog">Section Label</span>
+  <div class="section-rule-dark"></div>
 </div>
 ```
 
 - **Dark sections:** `--ink` bg, `--eyebrow` (rust) + `--section-rule`
-- **Light sections:** `--cream` bg, `--eyebrow-dim` + `--rule-dim`
+- **Light sections:** `--cream` bg, `--eyebrow-fog` + `--section-rule-dark`
 
 ## Spacing
 

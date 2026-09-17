@@ -15,7 +15,7 @@
   <nav aria-label="Main navigation">
     <div class="nav-logo"><a href="index.html">FAIR<span>WORK</span></a></div>
     <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-      <span class="nav-toggle-icon" aria-hidden="true">menu</span>
+      <span class="nav-icon" aria-hidden="true">menu</span>
     </button>
     <ul class="nav-links" id="nav-menu">
       <li><a href="index.html#publications">Explore</a></li>
@@ -115,7 +115,7 @@
       const open = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!open));
       this.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
-      this.querySelector('.nav-toggle-icon').textContent = open ? 'menu' : 'close';
+      this.querySelector('.nav-icon').textContent = open ? 'menu' : 'close';
       document.getElementById('nav-menu').classList.toggle('open', !open);
     });
   </script>

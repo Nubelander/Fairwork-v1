@@ -1,2 +1,6 @@
 @import url("styles.css");
 @import url("pages.css");
+
+#leadership {
+  padding-bottom: 3rem;
+}

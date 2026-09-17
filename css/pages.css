@@ -324,6 +324,83 @@
   color: rgba(244,239,230,.45);
 }
 
+/* Light (cream) section band — alternates with the dark page-wrap, matching the homepage's light/dark rhythm */
+.section-light {
+  background: var(--cream);
+  color: var(--ink);
+  margin: 0 -3rem;
+  padding: 3.5rem 3rem;
+}
+
+.section-light .section-intro {
+  color: rgba(10,10,10,.68);
+}
+
+.section-light .card,
+.section-light .theme-card,
+.section-light .person-card,
+.section-light .panel,
+.section-light .pub-card {
+  background: var(--white);
+  border-color: rgba(10,10,10,.08);
+}
+
+.section-light .card:hover,
+.section-light .theme-card:hover,
+.section-light .person-card:hover {
+  background: var(--white);
+  border-color: rgba(10,10,10,.16);
+}
+
+.section-light .card h3,
+.section-light .theme-title,
+.section-light .t-title,
+.section-light .p-name,
+.section-light .pub-title {
+  color: var(--ink);
+}
+
+.section-light .card p,
+.section-light .theme-desc,
+.section-light .t-desc,
+.section-light .p-bio,
+.section-light .panel p,
+.section-light .panel li,
+.section-light .pub-desc {
+  color: #555;
+}
+
+.section-light .theme-num,
+.section-light .t-date,
+.section-light .p-role,
+.section-light .step-num {
+  color: var(--rust);
+}
+
+.section-light .timeline::before {
+  background: rgba(10,10,10,.12);
+}
+
+.section-light .link-underline {
+  color: var(--slate);
+}
+
+.section-light .link-underline:hover {
+  color: var(--ink);
+}
+
+.section-light .p-avi {
+  background: linear-gradient(135deg, var(--fog2), #cfe3ec);
+  color: var(--ink2);
+}
+
+@media (max-width: 768px) {
+  .section-light {
+    margin: 0 -1.5rem;
+    padding: 3rem 1.5rem;
+  }
+}
+
 @media (max-width: 1024px) {
   .content-grid,
   .grid-2 {

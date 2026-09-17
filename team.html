@@ -15,7 +15,7 @@
   <nav aria-label="Main navigation">
     <div class="nav-logo"><a href="index.html">FAIR<span>WORK</span></a></div>
     <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
-      <span class="nav-toggle-icon" aria-hidden="true">menu</span>
+      <span class="nav-icon" aria-hidden="true">menu</span>
     </button>
     <ul class="nav-links" id="nav-menu">
       <li><a href="index.html#projects">Explore</a></li>
@@ -74,10 +74,10 @@
       </div>
     </section>
 
-    <section id="core" class="section-spacer">
+    <section id="core" class="section-spacer section-light">
       <div class="section-header">
-        <span class="eyebrow">Core Research Team</span>
-        <div class="section-rule"></div>
+        <span class="eyebrow-dim">Core Research Team</span>
+        <div class="rule-dim"></div>
       </div>
 
       <div class="grid-2">
@@ -105,10 +105,10 @@
       </div>
     </section>
 
-    <section id="bios" class="section-spacer">
+    <section id="bios" class="section-spacer section-light">
       <div class="section-header">
-        <span class="eyebrow">Team bios</span>
-        <div class="section-rule"></div>
+        <span class="eyebrow-dim">Team bios</span>
+        <div class="rule-dim"></div>
       </div>
 
       <div class="grid-3">
@@ -147,10 +147,10 @@
       </div>
     </section>
 
-    <section id="publications" class="section-spacer pubs-section pubs-section--page">
+    <section id="publications" class="section-spacer pubs-section pubs-section--page section-light">
       <div class="section-header">
-        <span class="eyebrow">Featured Publications</span>
-        <div class="section-rule"></div>
+        <span class="eyebrow-dim">Featured Publications</span>
+        <div class="rule-dim"></div>
       </div>
       <p class="section-intro reveal">The latest synthesis from our global network of research fellows.</p>
       <div class="pubs-grid">
@@ -184,10 +184,10 @@
 
   <footer class="site-footer">
     <div class="footer-top">
-      <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-tagline">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
-      <div><div class="footer-col-head">Research</div><ul class="footer-links"><li><a href="#publications">Latest Findings</a></li><li><a href="index.html#methodology">Methodology</a></li><li><a href="index.html#projects">Data Portal</a></li></ul></div>
-      <div><div class="footer-col-head">Resources</div><ul class="footer-links"><li><a href="index.html#themes">Research Themes</a></li><li><a href="about.html">About</a></li><li><a href="process.html">Research Process</a></li></ul></div>
-      <div><div class="footer-col-head">Connect</div><ul class="footer-links"><li><a href="index.html#involve">Join the Dialogue</a></li><li><a href="index.html#grail">GRAIL &amp; Purdue</a></li></ul></div>
+      <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-lead">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
+      <div><div class="footer-hd">Research</div><ul class="footer-links"><li><a href="#publications">Latest Findings</a></li><li><a href="index.html#methodology">Methodology</a></li><li><a href="index.html#projects">Data Portal</a></li></ul></div>
+      <div><div class="footer-hd">Resources</div><ul class="footer-links"><li><a href="index.html#themes">Research Themes</a></li><li><a href="about.html">About</a></li><li><a href="process.html">Research Process</a></li></ul></div>
+      <div><div class="footer-hd">Connect</div><ul class="footer-links"><li><a href="index.html#involve">Join the Dialogue</a></li><li><a href="index.html#grail">GRAIL &amp; Purdue</a></li></ul></div>
     </div>
     <div class="footer-bottom"><span class="footer-copy">© 2024 FAIRWORK Research Portal. A Purdue-Inspired Initiative.</span><span class="footer-copy"><a href="index.html" class="link-underline">Home</a></span></div>
   </footer>
@@ -208,7 +208,7 @@
       const open = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!open));
       this.setAttribute('aria-label', open ? 'Open menu' : 'Close menu');
-      this.querySelector('.nav-toggle-icon').textContent = open ? 'menu' : 'close';
+      this.querySelector('.nav-icon').textContent = open ? 'menu' : 'close';
       document.getElementById('nav-menu').classList.toggle('open', !open);
     });
   </script>

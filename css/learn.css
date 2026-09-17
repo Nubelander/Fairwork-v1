@@ -1,0 +1,55 @@
+@import url("styles.css");
+@import url("pages.css");
+
+.phase-badge {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: .45rem 1rem;
+  border: 1px solid rgba(204, 85, 56, .45);
+  border-radius: 999px;
+  font-family: var(--ff-u);
+  font-size: var(--text-label);
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--rust2);
+}
+
+.learn-outline {
+  display: grid;
+  gap: 1rem;
+}
+
+.learn-outline-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  padding: 1.5rem 1.75rem;
+  background: rgba(244, 239, 230, .04);
+  border: 1px solid rgba(244, 239, 230, .08);
+  border-radius: 4px;
+}
+
+.learn-outline-num {
+  font-family: var(--ff-u);
+  font-size: var(--text-label);
+  font-weight: 700;
+  letter-spacing: .14em;
+  color: var(--rust2);
+  padding-top: .2rem;
+}
+
+.learn-outline-row h3 {
+  font-family: var(--ff-d);
+  font-size: var(--type-card);
+  font-weight: 400;
+  color: var(--cream);
+  margin-bottom: .4rem;
+}
+
+.learn-outline-row p {
+  font-size: var(--text-sm);
+  line-height: 1.7;
+  color: rgba(244, 239, 230, .7);
+}
