@@ -62,6 +62,7 @@
   padding: .5rem 1rem;
   border: 1px solid rgba(244,239,230,.14);
   border-radius: 999px;
+  font-family: var(--ff-u);
   font-size: var(--text-label);
   font-weight: 700;
   letter-spacing: .1em;
