@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAIRWORK — Forecasting AI Risks and Impacts on the Workforce</title>
+<title>FAIRWORK - Forecasting AI Risks and Impacts on the Workforce</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
@@ -20,7 +20,7 @@
   </button>
   <ul class="nav-links" id="nav-menu">
     <li><a href="#projects">Explore</a></li>
-    <li><a href="#themes">Learn</a></li>
+    <li><a href="about.html#themes">Learn</a></li>
     <li><a href="about.html">About</a></li>
     <li><a href="team.html">Team</a></li>
   </ul>
@@ -69,17 +69,17 @@
 <div class="ticker-wrap">
   <div class="ticker-label">In the News</div>
   <div class="ticker-track">
-    <span class="ticker-item">NYT: "AI tools are changing how radiologists read scans — and who hospitals hire"</span>
+    <span class="ticker-item">NYT: "AI tools are changing how radiologists read scans - and who hospitals hire"</span>
     <span class="ticker-item">Reuters: New EU AI Act labor provisions take effect July 2026</span>
-    <span class="ticker-item">The Atlantic: "The jobs AI is actually taking — it's not what you think"</span>
+    <span class="ticker-item">The Atlantic: "The jobs AI is actually taking - it's not what you think"</span>
     <span class="ticker-item">WSJ: Goldman Sachs estimates 300M jobs globally face partial automation risk</span>
     <span class="ticker-item">MIT Tech Review: LLMs boost paralegal productivity by 42% in new RCT</span>
     <span class="ticker-item">NPR: Truck drivers union fights back against autonomous freight pilot programs</span>
     <span class="ticker-item">FT: AI coding assistants raise output but widen skill gaps within software teams</span>
     <span class="ticker-item">Bloomberg: Amazon warehouse AI system triggers fresh NLRB complaint</span>
-    <span class="ticker-item">NYT: "AI tools are changing how radiologists read scans — and who hospitals hire"</span>
+    <span class="ticker-item">NYT: "AI tools are changing how radiologists read scans - and who hospitals hire"</span>
     <span class="ticker-item">Reuters: New EU AI Act labor provisions take effect August 2026</span>
-    <span class="ticker-item">The Atlantic: "The jobs AI is actually taking — it's not what you think"</span>
+    <span class="ticker-item">The Atlantic: "The jobs AI is actually taking - it's not what you think"</span>
     <span class="ticker-item">WSJ: Goldman Sachs estimates 300M jobs globally face partial automation risk</span>
     <span class="ticker-item">MIT Tech Review: LLMs boost paralegal productivity by 42% in new RCT</span>
     <span class="ticker-item">NPR: Truck drivers union fights back against autonomous freight pilot programs</span>
@@ -87,6 +87,19 @@
     <span class="ticker-item">Bloomberg: Amazon warehouse AI system triggers fresh NLRB complaint</span>
   </div>
 </div>
+
+<!-- ═══ VIDEO ═══ -->
+<section class="video-section" aria-label="Introduction video">
+  <!-- Replace the placeholder div with e.g.
+       <iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID" title="FAIRWORK introduction" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+       or <video src="media/intro.mp4" controls poster="media/intro.jpg"></video> -->
+  <div class="video-frame">
+    <div class="video-placeholder">
+      <span class="video-play" aria-hidden="true">play_arrow</span>
+      <span class="video-label">Video coming soon</span>
+    </div>
+  </div>
+</section>
 
 <!-- ═══ INSIGHT OF THE MONTH ═══ -->
 <section class="insight">
@@ -112,7 +125,7 @@
     <span class="projects-hint">Click to explore · learn more</span>
   </div>
   <div class="projects-grid">
-    <div class="proj-card reveal d1" onclick="openProj('p2')">
+    <div class="proj-card reveal d1" role="link" tabindex="0" onclick="location.href='slr.html'" onkeydown="if(event.key==='Enter')location.href='slr.html'">
       <span class="proj-tag">Literature Review</span>
       <div class="proj-title">Systematic Literature Review (SLR)</div>
       <div class="proj-desc">Coded peer-reviewed literature on AI and the future of work.</div>
@@ -121,7 +134,6 @@
         <span>Codebook</span>
         <span>Active</span>
       </div>
-      <div class="proj-contrib">Explore database →</div>
     </div>
     <div class="proj-card proj-card--soon reveal d2" onclick="openProj('p1')">
       <span class="proj-tag">Forecasting</span>
@@ -131,7 +143,6 @@
         <span>Forecasting</span>
         <span>Coming Soon</span>
       </div>
-      <div class="proj-contrib">Learn more →</div>
     </div>
     <div class="proj-card proj-card--soon reveal d3" onclick="openProj('p3')">
       <span class="proj-tag">Experiment</span>
@@ -141,21 +152,7 @@
         <span>Survey</span>
         <span>Coming Soon</span>
       </div>
-      <div class="proj-contrib">Learn more →</div>
     </div>
-  </div>
-</section>
-
-<!-- ═══ CORE RESEARCH THEMES ═══ -->
-<section class="sec-themes" id="themes">
-  <div class="section-header"><span class="eyebrow-dim">Core Research Themes</span><div class="rule-dim"></div></div>
-  <div class="themes-grid themes--light">
-    <div class="theme-card reveal d1"><div class="theme-num">01</div><div class="theme-title">Automation</div><p class="theme-desc">Tracking the pace of task displacement across 42 industry categories with focus on manufacturing.</p></div>
-    <div class="theme-card reveal d2"><div class="theme-num">02</div><div class="theme-title">Skill Transitions</div><p class="theme-desc">Identifying effective reskilling pathways for workers transitioning into AI-collaborative roles.</p></div>
-    <div class="theme-card reveal d3"><div class="theme-num">03</div><div class="theme-title">Job Quality</div><p class="theme-desc">Measuring psychological well-being and job satisfaction in algorithm-managed environments.</p></div>
-    <div class="theme-card reveal d4"><div class="theme-num">04</div><div class="theme-title">Human–AI Collaboration</div><p class="theme-desc">Optimizing the interface between human intuition and machine predictive power in high-stakes fields.</p></div>
-    <div class="theme-card reveal d5"><div class="theme-num">05</div><div class="theme-title">Worker Surveillance</div><p class="theme-desc">Evaluating the legal and ethical implications of continuous biometric and digital activity monitoring.</p></div>
-    <div class="theme-card reveal d6"><div class="theme-num">06</div><div class="theme-title">Policy Responses</div><p class="theme-desc">Advising governments on legislative adaptive capacity to keep pace with technological change.</p></div>
   </div>
 </section>
 
@@ -166,20 +163,6 @@
     <div class="method-tagline">Rigorous, transparent,<br>replicable research.</div>
     <p class="method-copy">FAIRWORK produces open evidence for policymakers, researchers, workers, and journalists. Every dataset ships with a codebook; every method is documented for replication.</p>
   </div>
-  <div class="method-notes reveal">
-    <div class="note">
-      <div class="note-hd">Commitment to Transparency</div>
-      <p>We publish codebooks, inter-rater reliability scores, and full search protocols alongside every release so findings can be scrutinized and extended by others.</p>
-    </div>
-    <div class="note note--teal">
-      <div class="note-hd">What our data can — and can't — tell you</div>
-      <p>Our evidence maps trends and associations in peer-reviewed research — not causal claims about every workplace. We flag contested findings and methodological limits explicitly.</p>
-    </div>
-    <div class="note note--rust">
-      <div class="note-hd">Open Access Commitment</div>
-      <p>Public datasets, transparent methods, and freely available resources. Every dataset ships with a codebook; CC-BY licensed data available for researchers and educators.</p>
-    </div>
-  </div>
   <div class="audience-grid">
     <div class="audience-card reveal d1"><div class="aud-title">Policymakers</div><div class="aud-desc">Access evidence-based briefs on algorithmic governance, worker protections, and legislative adaptive capacity.</div></div>
     <div class="audience-card reveal d2"><div class="aud-title">Researchers &amp; Educators</div><div class="aud-desc">Use harmonized datasets, coded literature, and transparent methods for teaching and secondary analysis.</div></div>
@@ -188,7 +171,7 @@
   </div>
 </section>
 
-<!-- ═══ ACHIEVEMENTS ═══ -->
+<!-- ═══ ACHIEVEMENTS ═══ 
 <section id="achievements" class="achieve">
   <div class="achieve-wrap">
     <div class="section-header achieve-hd reveal">
@@ -218,7 +201,7 @@
       </article>
     </div>
   </div>
-</section>
+</section>-->
 
 <!-- ═══ JOIN THE DIALOGUE ═══ -->
 <section id="involve" class="dialogue">
@@ -232,7 +215,7 @@
   </div>
 </section>
 
-<!-- (Ask FAIRWORK) — hidden for Phase 2 -->
+<!-- (Ask FAIRWORK) - hidden for Phase 2 -->
 <div id="ask" class="ask-section is-hidden" hidden aria-hidden="true">
   <input type="password" id="ask-key" tabindex="-1">
   <input type="text" id="ask-input" tabindex="-1">
@@ -244,15 +227,11 @@
   <div class="affil-wrap reveal">
     <p class="affil-label">Affiliated with</p>
     <div class="affil-logos">
-      <a class="affil-logo affil-logo--purdue" href="https://www.purdue.edu/" target="_blank" rel="noopener" aria-label="Purdue University">
-        <img src="images/purdue.jpg" alt="Purdue University logo">
-      </a>
-      <span class="affil-rule" aria-hidden="true"></span>
       <a class="affil-logo affil-logo--grail" href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" target="_blank" rel="noopener" aria-label="GRAIL Lab">
         <img src="images/grail.png" alt="GRAIL logo">
       </a>
     </div>
-    <p class="affil-copy">FAIRWORK is housed within the <strong>Governance and Responsible AI Lab (GRAIL)</strong> at Purdue University — advancing rigorous, policy-relevant research on AI and the future of work.</p>
+    <p class="affil-copy">FAIRWORK is housed within the <strong>Governance and Responsible AI Lab (GRAIL)</strong> at Purdue University - advancing rigorous, policy-relevant research on AI and the future of work.</p>
     <div class="affil-actions">
       <a class="affil-btn" href="https://www.cla.purdue.edu/academic/polsci/research/labs/grail/index.html" target="_blank" rel="noopener">Visit GRAIL at Purdue</a>
       <a class="affil-btn affil-btn--filled" href="team.html">Learn More About the Team</a>
@@ -264,8 +243,10 @@
 <footer>
   <div class="footer-top">
     <div><div class="footer-brand">FAIR<span>WORK</span></div><p class="footer-lead">Advancing the global understanding of fair work standards in the age of algorithmic management and automated labor systems.</p></div>
-    <div><div class="footer-hd">Research</div><ul class="footer-links"><li><a href="team.html#publications">Latest Findings</a></li><li><a href="#methodology">Methodology</a></li><li><a href="#projects">Data Portal</a></li><li><a href="team.html#publications">Archive</a></li></ul></div>
-    <div><div class="footer-hd">Resources</div><ul class="footer-links"><li><a href="team.html#publications">Policy Briefs</a></li><li><a href="#">Whitepapers</a></li><li><a href="#themes">Research Themes</a></li><li><a href="#projects">Workshops</a></li></ul></div>
+    <div><div class="footer-hd">Research</div><ul class="footer-links"><li><a href="team.html#publications">Latest Findings</a></li><li><a href="#methodology">Methodology</a></li>
+      <li><a href="#projects">Data Portal</a></li>
+      <li><a href="team.html#publications">Archive</a></li></ul></div>
+    <div><div class="footer-hd">Resources</div><ul class="footer-links"><li><a href="team.html#publications">Policy Briefs</a></li><li><a href="#">Whitepapers</a></li><li><a href="about.html#themes">Research Themes</a></li><li><a href="#projects">Workshops</a></li></ul></div>
     <div><div class="footer-hd">Connect</div><ul class="footer-links"><li><a href="#involve">Join the Dialogue</a></li><li><a href="mailto:funding@fairwork.org?subject=Funding%20Interest">Funding</a></li><li><a href="#grail">GRAIL &amp; Purdue</a></li><li><a href="#">Contact</a></li></ul></div>
   </div>
   <div class="footer-bottom"><span class="footer-copy">© 2024 FAIRWORK Research Portal. A Purdue-Inspired Initiative.</span><span class="footer-copy">Privacy · Terms · Cookies</span></div>
@@ -278,7 +259,7 @@
   <button type="button" class="modal-close" onclick="closeInvolve()" aria-label="Close">✕</button>
   <h2 class="modal-hd" id="modal-hd">Get Involved</h2>
   <p class="modal-copy">Tell us how you'd like to contribute to FAIRWORK research.</p>
-  <form class="modal-form" onsubmit="event.preventDefault();this.querySelector('.modal-submit').textContent='✓ Sent — we\'ll be in touch.';this.querySelector('.modal-submit').disabled=true;">
+  <form class="modal-form" onsubmit="event.preventDefault();this.querySelector('.modal-submit').textContent='✓ Sent - we\'ll be in touch.';this.querySelector('.modal-submit').disabled=true;">
     <label class="visually-hidden" for="involve-name">Full name</label>
     <input type="text" class="modal-inp" id="involve-name" name="name" placeholder="Full name" required autocomplete="name">
     <label class="visually-hidden" for="involve-email">Email</label>
@@ -318,7 +299,7 @@ window.addEventListener('scroll', () => {
 // ═════════════════════════════════
 const PD = {
   p1:{tag:'Forecasting Dataset',title:'AI Exposure Forecasting Database',lead:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.",about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",tags:['Occupational Data','Harmonization','Forecasting','Open Data','Lorem Ipsum'],roles:[{t:'Data Analyst',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.'},{t:'Graduate RA',d:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.'},{t:'Developer',d:'Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.'}],status:'active',cta:'Interested in contributing to this project?'},
-  p2:{tag:'Systematic Literature Review',title:'SLR: Coded AI–Workforce Literature',lead:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.',about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",tags:['Literature Review','Codebook','Open Data','Peer-Reviewed','Ongoing'],roles:[{t:'Paper Coder',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.'},{t:'Screener',d:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.'},{t:'Methods Reviewer',d:'Excepteur sint occaecat cupidatat non proident deserunt mollit anim id est laborum.'}],status:'active',cta:'Join our coding team'},
+  p2:{tag:'Systematic Literature Review',title:'SLR: Coded AI-Workforce Literature',lead:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.',about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.",tags:['Literature Review','Codebook','Open Data','Peer-Reviewed','Ongoing'],roles:[{t:'Paper Coder',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.'},{t:'Screener',d:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.'},{t:'Methods Reviewer',d:'Excepteur sint occaecat cupidatat non proident deserunt mollit anim id est laborum.'}],status:'active',cta:'Join our coding team'},
   p3:{tag:'Survey Experiment',title:'Stakeholder Survey Experiment',lead:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua nemo enim ipsam voluptatem.',about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.",tags:['Survey Experiment','Causal Inference','Preregistered','Wave 2 Recruiting'],roles:[{t:'Survey Respondent',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod tempor incididunt labore.'},{t:'Organizational Partner',d:'Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu fugiat.'},{t:'Graduate Collaborator',d:'Excepteur sint occaecat cupidatat non proident sunt in culpa officia deserunt mollit.'}],status:'recruit',cta:'Participate in Wave 2 or become a recruiting partner'},
   p4:{tag:'Geography',title:'Geographic Inequality Analysis',lead:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation.",about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident mollit anim.",tags:['Geography','GIS','Labor Markets','Rural','Lorem Ipsum'],roles:[{t:'GIS Analyst',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt.'},{t:'International Partner',d:'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore fugiat.'},{t:'Developer',d:'Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt.'}],status:'active',cta:'Collaborate on this project'},
   p5:{tag:'Policy',title:'Policy Response Mapping',lead:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim veniam.",about:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt mollit.",tags:['Policy','Legislation','Regulatory','Lorem Ipsum','Recruiting'],roles:[{t:'Policy Coder',d:'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.'},{t:'International RA',d:'Duis aute irure dolor in reprehenderit in voluptate esse cillum dolore eu fugiat.'},{t:'Policy Fellow',d:'Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia mollit.'}],status:'recruit',cta:'Help us code policy documents'},
@@ -384,7 +365,7 @@ function closeInvolve() {
 // ═════════════════════════════════
 // ASK FAIRWORK
 // ═════════════════════════════════
-const SYS = `You are FAIRWORK, an AI research assistant for the FAIRWORK project — Forecasting AI Risks and Impacts on the Workforce — a Purdue-inspired initiative within the GRAIL research network.
+const SYS = `You are FAIRWORK, an AI research assistant for the FAIRWORK project - Forecasting AI Risks and Impacts on the Workforce - a Purdue-inspired initiative within the GRAIL research network.
 
 The FAIRWORK project investigates how artificial intelligence is reshaping labor markets, job structures, and workforce policy. Through systematic review and qualitative coding of hundreds of academic studies, the project builds a structured database mapping key trends in AI-driven automation, job displacement, skill shifts, and worker well-being. The research also examines policy responses including regulation, education, and worker protections. Undergraduate researchers play a central role in the coding and analysis process.
 
@@ -406,7 +387,7 @@ function setQ(t){document.getElementById('ask-input').value=t;document.getElemen
 function heroSearch() {
   const q = document.getElementById('hero-search').value.trim();
   if (!q) return;
-  /* (Ask FAIRWORK) — Phase 2 */
+  /* (Ask FAIRWORK) - Phase 2 */
 }
 
 document.getElementById('nav-toggle').addEventListener('click', function () {
